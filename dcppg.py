@@ -26,7 +26,7 @@ class Network():
         with tf.variable_scope('critic'):
             merge_net = tflearn.fully_connected(inputs, FEATURE_NUM, activation='relu')
             net = tflearn.fully_connected(merge_net, FEATURE_NUM, activation='relu')
-            value = tflearn.fully_connected(net, self.a_dim, activation='linear')
+            value = tflearn.fully_connected(net, 1, activation='linear')
         return pi, value, phasic_val
             
     def get_network_params(self):
