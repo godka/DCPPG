@@ -1,5 +1,5 @@
 # DCPPG
-Dual-clip Phasic Policy Gradient
+Dual-clip Phasic Policy Gradient: the simplest implementation of DCPPG (dual-clip phasic policy gradient), which can be viewed as the fusion of Dual-clip PPO + PPG. It significantly improves the converge speed compared with DCPPO.
 
 ## Dual-clip PPO: 
 
